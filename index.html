@@ -7,6 +7,16 @@
     <title>VIDEO</title>
 </head>
 <body style="overflow: hidden; margin: 0px;">
-    <a style="display:block; width: 100vw; height: 100vh; background: url('test.jpeg'); background-size: cover; background-repeat: no-repeat;" href="https://www.instagram.com/9mice?igsh=eWEzZXA1Y213c3gz"></a>
+    <div style="display:blcok; width: 100vw; height: 100vh; background: url('testShow.jpeg'); background-size: cover; background-repeat: no-repeat;" id="show"></div>
+    <div style="display:none; width: 100vw; height: 100vh; background: url('testNone.jpg'); background-size: cover; background-repeat: no-repeat;" id="none"></div>
+    <script>
+        const blockShow = document.querySelector("#show");
+        const blockNone = document.querySelector("#none");
+
+        blockShow.addEventListener('click', function() {
+            blockShow.style.display = 'none';
+            blockNone.style.display = 'block';
+        });
+    </script>
 </body>
 </html>
